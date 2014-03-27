@@ -4,6 +4,7 @@ require "thor"
 module CalExporter
   class CLI < Thor
     
+    desc "calender CALENDER_ID FILE_FORMAT, SAVE_LOCATION", "export calender with specified file format"
     def calender(calendar_id, file_format, save_location)
       cal_exporter = Exporter.new(calendar_id, file_format, save_location)
       cal_exporter.execute(calendar_id, file_format, save_location)
@@ -21,14 +22,14 @@ module CalExporter
   	end
 
 
-  	def execute(@calendar_id, @file_format, @save_location)
-  		event = fetch(@calendar_id)
+  	def execute(calendar_id, file_format, save_location)
+  		event = fetch(calendar_id)
   		content = event.send("#to_{format}") rescue nil
-  		save(@save_location content)
+  		save(save_location content)
   	end
 
 
-  	def fetch(@calendar_id)
+  	def fetch(calendar_id)
   	end
 
 
@@ -36,7 +37,7 @@ module CalExporter
   	end
 
 
-  	def save(@save_location, content)
+  	def save(save_location, content)
   	end 
 
   end
