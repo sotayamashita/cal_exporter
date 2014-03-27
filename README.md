@@ -18,11 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-1. Copy Calender ID : Select calender > Calender setting 
+### 1 Copy Calender ID : Select calender > Calender setting 
 
 ![](https://dl.dropboxusercontent.com/u/74344418/github-image/cal_expoter.png)
 
-2. Type code below:
+### 2 Type code below:
 
 ```
 $ cal_exporter calender CALENDER_ID FILE_FORMAT SAVE_LOCATION 
