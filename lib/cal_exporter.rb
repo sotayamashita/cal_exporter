@@ -1,7 +1,8 @@
 require "cal_exporter/version"
+require "thor"
 
 module CalExporter
-  class CLI
+  class CLI < Thor
     
     def calender(calendar_id, file_format, save_location)
       cal_exporter = Exporter.new(calendar_id, file_format, save_location)
