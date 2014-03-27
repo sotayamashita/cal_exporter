@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+![](https://dl.dropboxusercontent.com/u/74344418/github-image/cal_expoter.png)
 
 ## Contributing
 
