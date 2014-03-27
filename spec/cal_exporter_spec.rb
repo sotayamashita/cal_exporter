@@ -1,13 +1,14 @@
 require 'spec_helper'
 
 describe CalExporter do
-  it "is a pending example"
+  it "is a pending"
+
+  it 'should have a version number' do
+     expect(CalExporter::VERSION).not_to be nil
+  end
 end
 
-# describe CalExporter do
-#   it 'should have a version number' do
-#     expect(CalExporter::VERSION).not_to be nil
-#   end
+
 
 #   it 'should do something useful' do
 #     expect(false).to eq(true)
