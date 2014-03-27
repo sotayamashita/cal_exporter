@@ -42,3 +42,6 @@ module CalExporter
 
   end
 end
+
+
+CLI.start(ARGV)
