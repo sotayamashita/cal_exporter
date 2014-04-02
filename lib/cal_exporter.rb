@@ -10,11 +10,6 @@ module CalExporter
       cal_exporter.execute(calendar_id, file_format, save_location)
     end
 
-    desc "example", "an example task"
-    def example
-      puts "I'm a thor task!"
-    end
-
   end
 
 
