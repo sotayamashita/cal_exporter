@@ -44,4 +44,4 @@ module CalExporter
 end
 
 
-CLI.start(ARGV)
+CalExporter::CLI.start(ARGV)
