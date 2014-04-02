@@ -31,6 +31,12 @@ $ cal_exporter calender CALENDER_ID FILE_FORMAT SAVE_LOCATION
 That's it!!
 
 
+## TODO
+
+- Export as CSV
+- Export as JSON
+- Decide export one file or each event file
+
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/cal_exporter/fork )
