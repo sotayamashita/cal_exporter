@@ -6,8 +6,8 @@ module CalExporter
     
     desc "calender CALENDER_ID FILE_FORMAT, SAVE_LOCATION", "export calender with specified file format"
     def calender(calendar_id, file_format, save_location)
-      cal_exporter = Exporter.new(calendar_id, file_format, save_location)
-      cal_exporter.execute(calendar_id, file_format, save_location)
+      cal = Exporter.new(calendar_id, file_format, save_location)
+      cal.execute(calendar_id, file_format, save_location)
     end
 
   end
