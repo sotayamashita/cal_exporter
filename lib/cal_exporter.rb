@@ -27,9 +27,10 @@ module CalExporter
 
 
   	def execute(calendar_id, format, save_location)
-  		event = fetch(calendar_id)
-  		content = event.send("#to_{format}") rescue nil
+  		fetch(calendar_id)
+  		# content = to_jekyll(event)
   		# save(save_location content)
+      # save(content, event)
   	end
 
 
@@ -38,17 +39,15 @@ module CalExporter
     
       calendars = open (calender_url) { |cal| Icalendar.parse(cal) }
 
-      event = calendars.each do |calendar|
-        calendar.events.each { |event| }
+      calendars.each do |calendar|
+        calendar.events.each do |event| 
+          to_jekyll(event)
+        end
       end
   	end
 
 
   	def to_jekyll(event)
-      # 現在のディレクトリ取得
-      current_path = File.expand_path(File.dirname($0))
-      # meetup/ ディレクトリがなかったら作成
-      Dir.mkdir("#{current_path}/meetup") unless Dir.exist?("#{current_path}/meetup")
 
       url = url_list(event.description)
     
@@ -57,14 +56,12 @@ module CalExporter
       new_title = new_title.sub(']', ')')
       new_title = new_title.sub(':', '&#58;') 
 
-      uid = adjust_string_length(event.uid)
-
       # List of output
       output_list = {
         "title"         => new_title,
         "location"      => event.location,
-        "date"          => get_date_format(event.dtstart,'%Y-%m-%d'),
-        "friendly_date" => get_date_format(event.dtstart,'%A %d %b %Y'),
+        "date"          => date_format(event.dtstart,'%Y-%m-%d'),
+        "friendly_date" => date_format(event.dtstart,'%A %d %b %Y'),
         "link"          => url[0],
         "layout"        => "post",
         "categories"    => "meetup",
@@ -73,29 +70,35 @@ module CalExporter
 
       content = "---\ntitle: #{output_list['new_title']}\nlocation: #{output_list['location']}\ndate: #{output_list['date']}\nfriendly_date: #{output_list['friendly_date']}\nlink: #{output_list['url']}\nlayout: post\ncategories: meetups\n---\n#{output_list['summary']}"
 
+      save(content, event)
+  	end
+
+
+  	# def save(save_location, content)
+    
+    #   current_path = File.expand_path(File.dirname($0))
+    #   Dir.mkdir("#{current_path}/meetup") unless Dir.exist?("#{current_path}/meetup")
+
+  	# end
+
+    def save(content, event)
+      current_path = File.expand_path(File.dirname($0))
+      Dir.mkdir("#{current_path}/meetup") unless Dir.exist?("#{current_path}/meetup")
+
+
       # Create file
-      f = File.open("#{current_path}/meetup/#{output_list['date']}-#{uid}.md", "w")
+      f = File.open("#{current_path}/meetup/#{event.uid[0, 7]}.md", "w")
         f.write(content)
       f.close 
-  	end
-
-
-  	def save(save_location, content)
-
-  	end
+    end
 
 
     def url_list(description)
-      return URI.extract(description, %w[http https])
+      URI.extract(description, %w[http https])
     end
 
 
-    def adjust_string_length(unique_id)
-      return unique_id[0, 7]
-    end
-
-
-    def get_date_format(date, datetime_format)
+    def date_format(date, datetime_format)
       d = DateTime.parse(date.to_s)
       return d.strftime(datetime_format)
     end
