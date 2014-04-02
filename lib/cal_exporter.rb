@@ -68,7 +68,7 @@ module CalExporter
         "summary"       => event.summary,
       } 
 
-      content = "---\ntitle: #{output_list['new_title']}\nlocation: #{output_list['location']}\ndate: #{output_list['date']}\nfriendly_date: #{output_list['friendly_date']}\nlink: #{output_list['url']}\nlayout: post\ncategories: meetups\n---\n#{output_list['summary']}"
+      content = "---\ntitle: #{output_list['title']}\nlocation: #{output_list['location']}\ndate: #{output_list['date']}\nfriendly_date: #{output_list['friendly_date']}\nlink: #{output_list['link']}\nlayout: post\ncategories: meetups\n---\n#{output_list['summary']}"
 
       save(content, event)
   	end
