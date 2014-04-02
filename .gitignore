@@ -21,3 +21,7 @@ tmp
 *.o
 *.a
 mkmf.log
+
+
+# For development
+meetup/
