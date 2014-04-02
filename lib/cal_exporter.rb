@@ -81,7 +81,24 @@ module CalExporter
 
 
   	def save(save_location, content)
-  	end 
+
+  	end
+
+
+    def url_list(description)
+      return URI.extract(description, %w[http https])
+    end
+
+
+    def adjust_string_length(unique_id)
+      return unique_id[0, 7]
+    end
+
+
+    def get_date_format(date, datetime_format)
+      d = DateTime.parse(date.to_s)
+      return d.strftime(datetime_format)
+    end
 
   end
 end
