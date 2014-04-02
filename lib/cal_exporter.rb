@@ -4,6 +4,7 @@ require "open-uri"
 require "thor"
 require "date"
 require "thor"
+require 'yaml'
 
 module CalExporter
   class CLI < Thor
@@ -59,23 +60,26 @@ module CalExporter
       # List of output
       output_list = {
         "title"         => new_title,
-        "location"      => event.location,
+        "location"      => event.location.chomp,
         "date"          => date_format(event.dtstart,'%Y-%m-%d'),
         "friendly_date" => date_format(event.dtstart,'%A %d %b %Y'),
         "link"          => url[0],
         "layout"        => "post",
-        "categories"    => "meetup",
-        "summary"       => event.summary,
+        "categories"    => "meetup"
       } 
 
-      content = "---\ntitle: #{output_list['title']}\nlocation: #{output_list['location']}\ndate: #{output_list['date']}\nfriendly_date: #{output_list['friendly_date']}\nlink: #{output_list['link']}\nlayout: post\ncategories: meetups\n---\n#{output_list['summary']}"
+      other_lsit = event.summary.chomp
 
-      save(content, event)
+      content = output_list.to_yaml
+
+      p content
+
+      # save(content, event)
   	end
 
 
   	# def save(save_location, content)
-    
+
     #   current_path = File.expand_path(File.dirname($0))
     #   Dir.mkdir("#{current_path}/meetup") unless Dir.exist?("#{current_path}/meetup")
 
