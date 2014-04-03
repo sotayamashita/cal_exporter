@@ -20,9 +20,14 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency 'icalendar', '~> 1.5', '>= 1.5.1'
   spec.add_runtime_dependency 'thor', '~> 0.18', '>= 0.18.1'
-
+  
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"
-  spec.add_development_dependency "rspec"
+  spec.add_development_dependency "rspec", '~> 2.14.1'
+
+  # For Debug 
+  # TODO Delete it before publishing
+  spec.add_runtime_dependency 'pry'
+  spec.add_runtime_dependency 'awesome_print'
 
 end
