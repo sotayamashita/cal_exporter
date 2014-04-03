@@ -18,6 +18,7 @@ module CalExporter
   end
 
 
+
   class Exporter
 
   	def initialize(calendar_id, format, save_location)
@@ -68,13 +69,11 @@ module CalExporter
         "categories"    => "meetup"
       } 
 
-      other_lsit = event.summary.chomp
+      other_lsit = []
 
-      content = output_list.to_yaml
+      content = output_list.to_yaml + other_lsit.to_yaml
 
-      p content
-
-      # save(content, event)
+      save(content, event)
   	end
 
 
@@ -87,11 +86,11 @@ module CalExporter
 
     def save(content, event)
       current_path = File.expand_path(File.dirname($0))
-      Dir.mkdir("#{current_path}/meetup") unless Dir.exist?("#{current_path}/meetup")
+      Dir.mkdir("#{current_path}/meetups") unless Dir.exist?("#{current_path}/meetups")
 
 
       # Create file
-      f = File.open("#{current_path}/meetup/#{event.uid[0, 7]}.md", "w")
+      f = File.open("#{current_path}/meetups/#{event.uid[0, 7]}.md", "w")
         f.write(content)
       f.close 
     end
@@ -106,6 +105,7 @@ module CalExporter
       d = DateTime.parse(date.to_s)
       return d.strftime(datetime_format)
     end
+    
 
   end
 end
