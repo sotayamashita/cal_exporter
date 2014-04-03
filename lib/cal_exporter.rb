@@ -4,7 +4,7 @@ require "open-uri"
 require "thor"
 require "date"
 require "thor"
-require 'yaml'
+require "yaml"
 # For Debug 
 # TODO Delete it before publishing
 require 'pry'
@@ -19,10 +19,9 @@ module CalExporter
       calendars = import.fetch
       export = Exporter.new(format, save_location)
 
-      # save
       calendars.each do |calendar|
         calendar.events.each do |event|  
-          export.save(event)
+          export.save_as_jekyll(event)
         end
       end
     end
@@ -31,7 +30,6 @@ module CalExporter
   require 'cal_exporter/exporter.rb'
   require 'cal_exporter/importer.rb'
   
-
 end
 
 
