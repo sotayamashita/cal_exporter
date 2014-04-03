@@ -29,10 +29,10 @@ module CalExporter
 
 
   	def execute(calendar_id, format, save_location)
-  		fetch(calendar_id)
-  		# content = to_jekyll(event)
+  		event = fetch(calendar_id)
+  		content = to_jekyll(event)
   		# save(save_location content)
-      # save(content, event)
+      save(content, event)
   	end
 
 
@@ -43,7 +43,7 @@ module CalExporter
 
       calendars.each do |calendar|
         calendar.events.each do |event| 
-          to_jekyll(event)
+          return event
         end
       end
   	end
@@ -66,14 +66,12 @@ module CalExporter
         "friendly_date" => date_format(event.dtstart,'%A %d %b %Y'),
         "link"          => url[0],
         "layout"        => "post",
-        "categories"    => "meetup"
+        "categories"    => "meetups"
       } 
 
-      other_lsit = []
+      content = output_list.to_yaml
 
-      content = output_list.to_yaml + other_lsit.to_yaml
-
-      save(content, event)
+      return content
   	end
 
 
@@ -105,7 +103,7 @@ module CalExporter
       d = DateTime.parse(date.to_s)
       return d.strftime(datetime_format)
     end
-    
+
 
   end
 end
