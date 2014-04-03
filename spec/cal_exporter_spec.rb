@@ -6,6 +6,9 @@ describe CalExporter do
   it 'should have a version number' do
      expect(CalExporter::VERSION).not_to be nil
   end
+
+  subject (Object) {CalExporter.new} 
+  it 
 end
 
 
