@@ -16,7 +16,7 @@ class Exporter
         "friendly_date" => event.dtstart.strftime('%A %d %b %Y'),  
         "link"          => url_list(event.description)[0],
         "layout"        => "post",
-        "categories"    => "meetups"
+        "categories"    => "meetups",
         "test"          => event.description
       }
   	end
