@@ -28,7 +28,13 @@ Or install it yourself as:
 $ cal_exporter calender CALENDER_ID FILE_FORMAT SAVE_LOCATION 
 ```
 
-That's it!!
+Example code below :
+
+```
+$ cal_exporter calender engineyard.com_f0a3jqaqooc9r7kmk2hiblojgs@group.calendar.google.com jekyll ~/Desktop 
+```
+
+
 
 
 ## TODO
