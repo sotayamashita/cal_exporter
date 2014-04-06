@@ -4,11 +4,10 @@ require "open-uri"
 require "thor"
 require "date"
 require "thor"
-require "yaml"
 # For Debug 
 # TODO Delete it before publishing
-require 'pry'
-require 'awesome_print'
+require "pry"
+require "awesome_print"
 
 module CalExporter
   class CLI < Thor
@@ -21,9 +20,10 @@ module CalExporter
 
       calendars.each do |calendar|
         calendar.events.each do |event|  
-          export.save_as_jekyll(event)
+          say export.save_as_jekyll(event)
         end
       end
+      say "Creating Files under #{save_location}.", :green
     end
   end
 
