@@ -1,3 +1,5 @@
+require "yaml"
+
 class Exporter
 
 
@@ -17,8 +19,10 @@ class Exporter
         "link"          => url_list(event.description)[0],
         "layout"        => "post",
         "categories"    => "meetups",
-        "test"          => event.description
+        "test"          => event.description.chomp
       }
+
+      output_list.to_yaml
   	end
 
 
@@ -27,11 +31,15 @@ class Exporter
 
       path = "#{@save_location}/meetups"
 
+      file_name = "#{event.dtstart.strftime('%Y-%m-%d')}-#{event.uid[0, 7]}.md"
+
       Dir.mkdir(path) unless Dir.exist?(path)
 
-      f = File.open("#{path}/#{event.dtstart.strftime('%Y-%m-%d')}-#{event.uid[0, 7]}.md", "w")
+      f = File.open("#{path}/#{file_name}", "w")
       f.write(to_jekyll(event))
       f.close 
+
+      file_name
     end
 
 
