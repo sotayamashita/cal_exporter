@@ -9,6 +9,7 @@ require "thor"
 require "pry"
 require "awesome_print"
 
+
 module CalExporter
   class CLI < Thor
     
@@ -23,7 +24,7 @@ module CalExporter
           say export.save_as_jekyll(event)
         end
       end
-      say "Creating Files under #{save_location}.", :green
+      say "Successfully created Files under #{save_location}.", :green
     end
   end
 
