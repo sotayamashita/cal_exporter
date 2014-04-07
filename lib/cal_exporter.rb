@@ -28,8 +28,8 @@ module CalExporter
     end
   end
 
-  require 'cal_exporter/exporter.rb'
   require 'cal_exporter/importer.rb'
+  require 'cal_exporter/exporter.rb'
   
 end
 
