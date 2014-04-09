@@ -3,11 +3,7 @@ require "icalendar"
 require "open-uri"
 require "thor"
 require "date"
-require "thor"
 require "pry"
-require "pry-nav"
-require "rspec-nc"
-require "guard"
 require "awesome_print"
 
 
