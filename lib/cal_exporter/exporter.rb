@@ -10,7 +10,6 @@ class Exporter
 
 
   	def to_jekyll(event)
-      #TODO: Create complete jekyll file
       output_list = {
         "title"         => event.summary.gsub(/[|]|:/, '[' => '(', ']' => ')', ':' => '&#58;'),
         "location"      => event.location.chomp,
