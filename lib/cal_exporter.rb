@@ -4,7 +4,6 @@ require "open-uri"
 require "thor"
 require "date"
 require "pry"
-require "awesome_print"
 
 
 module CalExporter
@@ -25,8 +24,8 @@ module CalExporter
     end
   end
 
-  require 'cal_exporter/importer.rb'
-  require 'cal_exporter/exporter.rb'
+  require 'cal_exporter/importer'
+  require 'cal_exporter/exporter'
   
 end
 
