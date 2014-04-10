@@ -5,7 +5,7 @@
 [![Coverage Status](https://coveralls.io/repos/sota0805/cal_exporter/badge.png)](https://coveralls.io/r/sota0805/cal_exporter)
 
 
-TODO: Write a gem description
+Export calendar data
 
 ## Installation
 
