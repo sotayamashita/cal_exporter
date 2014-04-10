@@ -22,12 +22,10 @@ module CalExporter
       }
 
       output_list.to_yaml + "---\n#{event.description}"
-
   	end
 
 
     def save_as_jekyll(event)
-
       file_name = "#{@save_location}/#{event.dtstart.strftime('%Y-%m-%d')}-#{event.uid[0, 7]}.md"
 
       Dir.mkdir(@save_location) unless Dir.exist?(@save_location)
