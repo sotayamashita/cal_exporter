@@ -4,7 +4,7 @@ describe Expoter do
 
   before do
     @format = "jekyll"
-    @save_location = "~/Desktop"
+    @save_location = "~/Desktop/meetups"
   end
 
   it "should create yml file" do
