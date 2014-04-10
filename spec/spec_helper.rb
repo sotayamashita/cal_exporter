@@ -3,3 +3,5 @@ require 'cal_exporter'
 require 'cal_exporter/exporter'
 require 'cal_exporter/importer'
 Coveralls.wear!
+require "codeclimate-test-reporter"
+CodeClimate::TestReporter.start
