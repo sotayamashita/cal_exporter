@@ -16,7 +16,7 @@ module CalExporter
       export = Exporter.new(format, save_location)
 
       calendars.each do |calendar|
-        calendar.events.each do |event|  
+        calendar.events.each do |event|
           say export.save_as_jekyll(event)
         end
       end
