@@ -1,6 +1,7 @@
 require "yaml"
 
-class Exporter
+module CalExporter 
+  class Exporter
 
 
   	def initialize(format, save_location)
@@ -45,3 +46,4 @@ class Exporter
     
 
   end
+end
