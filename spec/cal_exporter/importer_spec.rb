@@ -7,7 +7,7 @@ describe Importer do
   end
 
   it "should return calender data" do 
-    Importer.new(@calender_id).fetch.should_not be_empty
+    Importer.new(@calender_id).fetch[0].class.should equal(Icalendar::Calendar)
   end
 
 end
