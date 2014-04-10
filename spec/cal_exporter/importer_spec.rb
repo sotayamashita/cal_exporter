@@ -10,4 +10,6 @@ describe Importer do
     Importer.new(@calender_id).fetch[0].class.should equal(Icalendar::Calendar)
   end
 
+  context ''
+
 end
