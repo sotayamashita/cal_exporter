@@ -30,13 +30,13 @@ Or install it yourself as:
 ### 2 Type code below:
 
 ```
-$ cal_exporter calender CALENDER_ID FILE_FORMAT SAVE_LOCATION 
+$ cal_exporter calendar CALENDER_ID FILE_FORMAT SAVE_LOCATION 
 ```
 
 Example code below :
 
 ```
-$ cal_exporter calender engineyard.com_f0a3jqaqooc9r7kmk2hiblojgs@group.calendar.google.com jekyll ~/Desktop
+$ cal_exporter calendar engineyard.com_f0a3jqaqooc9r7kmk2hiblojgs@group.calendar.google.com jekyll ~/Desktop/meetups
 
 $ tree
 .
