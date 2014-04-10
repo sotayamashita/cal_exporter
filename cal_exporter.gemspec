@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["sota0805"]
   spec.email         = ["sota.yamashita@gmail.com"]
   spec.summary       = %q{Calander Exporter}
-  spec.description   = %q{Calander Exporter}
-  spec.homepage      = ""
+  spec.description   = %q{Export calendar data}
+  spec.homepage      = "https://github.com/sota0805/cal_exporter/"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
