@@ -20,7 +20,7 @@ module CalExporter
           say export.save_as_jekyll(event)
         end
       end
-      say "Successfully created Files under #{save_location}.", :green
+      say "Successfully created Files under #{save_location}.",  :green
     end
   end
 
