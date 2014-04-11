@@ -43,14 +43,15 @@ $ cal_exporter calendar engineyard.com_f0a3jqaqooc9r7kmk2hiblojgs@group.calendar
 
 $ tree
 .
-├── 2013-04-08-qaias4p.md
-├── 2013-04-15-boenj2u.md
-├── 2013-04-17-8m2aphs.md
-├── 2013-04-20-fqmab6r.md
-├── 2013-04-22-5itqrg3.md
-├── 2013-04-23-eml2lv5.md
-├── 2013-04-24-9jck6ib.md
-├── 2013-04-26-go72sbm.md
+meetups/
+ ├── 2013-04-08-qaias4p.md
+ ├── 2013-04-15-boenj2u.md
+ ├── 2013-04-17-8m2aphs.md
+ ├── 2013-04-20-fqmab6r.md
+ ├── 2013-04-22-5itqrg3.md
+ ├── 2013-04-23-eml2lv5.md
+ ├── 2013-04-24-9jck6ib.md
+ ├── 2013-04-26-go72sbm.md
 ...
  
 ```
