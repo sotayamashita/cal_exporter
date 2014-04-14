@@ -8,7 +8,7 @@
 
 
 
-Export calendar data
+Export calendar data for **jekyll**.
 
 ## Installation
 
