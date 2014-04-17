@@ -9,7 +9,7 @@ require "pry"
 module CalExporter
   class CLI < Thor
     
-    desc "calendar CALENDER_ID FORMAT SAVE_LOCATION", "Export calender with specified file format"
+    desc "calendar CALENDAR_ID FORMAT SAVE_LOCATION", "Export calendar with specified file format"
     def calendar(calendar_id, format, save_location)
       import = Importer.new(calendar_id)
       calendars = import.fetch
