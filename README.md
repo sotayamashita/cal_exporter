@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/sota0805/cal_exporter.png?label=ready&title=Ready)](https://waffle.io/sota0805/cal_exporter)
 # CalExporter
 
 [![Build Status](https://travis-ci.org/sota0805/cal_exporter.svg)](https://travis-ci.org/sota0805/cal_exporter)
