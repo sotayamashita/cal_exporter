@@ -1,4 +1,4 @@
-[![Stories in Ready](https://badge.waffle.io/sota0805/cal_exporter.png?label=ready&title=Ready)](https://waffle.io/sota0805/cal_exporter)
+
 # CalExporter
 
 [![Build Status](https://travis-ci.org/sota0805/cal_exporter.svg)](https://travis-ci.org/sota0805/cal_exporter)
@@ -6,6 +6,7 @@
 [![Coverage Status](https://coveralls.io/repos/sota0805/cal_exporter/badge.png)](https://coveralls.io/r/sota0805/cal_exporter)
 [![Gem Version](https://badge.fury.io/rb/cal_exporter.svg)](http://badge.fury.io/rb/cal_exporter)
 [![Inline docs](http://inch-pages.github.io/github/sota0805/cal_exporter.png)](http://inch-pages.github.io/github/sota0805/cal_exporter)
+[![Stories in Ready](https://badge.waffle.io/sota0805/cal_exporter.png?label=ready&title=Ready)](https://waffle.io/sota0805/cal_exporter)
 
 
 
