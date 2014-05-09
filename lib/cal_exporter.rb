@@ -11,6 +11,7 @@ module CalExporter
   class CLI < Thor
     
     desc "calendar CALENDAR_ID FORMAT SAVE_LOCATION", "Export calendar with specified file format"
+    # Main Method
     def calendar(calendar_id, format, save_location)
       import = Importer.new(calendar_id)
       calendars = import.fetch
