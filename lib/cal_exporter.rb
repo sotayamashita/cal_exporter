@@ -3,6 +3,8 @@ require "icalendar"
 require "open-uri"
 require "thor"
 require "date"
+require "pry"
+require "guard"
 
 
 module CalExporter
