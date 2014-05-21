@@ -4,6 +4,8 @@ require 'spec_helper'
 
 describe CalExporter::Exporter do
 
+  # スクリプトが走る前のもろもろ設定 
+  # ~の場合とかできないかな・・・
   before do
     @format = "jekyll"
     @save_location = "~/Desktop/meetups"
