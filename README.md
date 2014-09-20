@@ -74,3 +74,14 @@ meetups/
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+
+## License
+
+classicpress and all content are released under the [MIT License](LICENSE).
+
+## Author
+
+| [![twitter/sota0805](http://2.gravatar.com/avatar/1819ffcc36875ddbf8df81532d832a2b?s=70)](http://twitter.com/sota0805 "Follow @sota0805 on Twitter") |
+|---|
+| [Sota Yamashita](http://sota0805.github.io/) |
