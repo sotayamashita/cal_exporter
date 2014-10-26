@@ -1,4 +1,3 @@
-
 # CalExporter
 [![Build Status](https://travis-ci.org/sota0805/cal_exporter.svg)](https://travis-ci.org/sota0805/cal_exporter)
 [![Code Climate](https://codeclimate.com/github/sota0805/cal_exporter.png)](https://codeclimate.com/github/sota0805/cal_exporter)
