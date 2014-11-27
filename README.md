@@ -52,9 +52,9 @@ Example code below :
 
 ## TODO
 
-- Export as CSV
-- Export as JSON
-- Decide export one file or each event file
+- [ ] Export as CSV
+- [ ] Export as JSON
+- [ ] Decide export one file or each event file
 
 ## Contributing
 
