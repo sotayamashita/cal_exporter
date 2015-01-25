@@ -1,8 +1,6 @@
 CalExporter
 ============
 
-test
-
 [![Build Status](https://travis-ci.org/sota0805/cal_exporter.svg)](https://travis-ci.org/sota0805/cal_exporter)
 [![Code Climate](https://codeclimate.com/github/sota0805/cal_exporter.png)](https://codeclimate.com/github/sota0805/cal_exporter)
 [![Coverage Status](https://coveralls.io/repos/sota0805/cal_exporter/badge.png)](https://coveralls.io/r/sota0805/cal_exporter)
