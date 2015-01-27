@@ -55,6 +55,7 @@ Example code below :
 - [ ] Export as CSV
 - [ ] Export as JSON
 - [ ] Decide export one file or each event file
+- [ ] Export as xml
 
 ## Contributing
 
