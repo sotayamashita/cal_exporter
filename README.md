@@ -1,7 +1,7 @@
 CalExporter
 ============
 
-[![Build Status](https://travis-ci.org/sotayamashita/cal_exporter.svg?branch=master)](https://travis-ci.org/sotayamashita/cal_exporter)[![Code Climate](https://codeclimate.com/github/sota0805/cal_exporter.png)](https://codeclimate.com/github/sota0805/cal_exporter)
+[![Build Status](https://travis-ci.org/sotayamashita/cal_exporter.svg?branch=master)](https://travis-ci.org/sotayamashita/cal_exporter) [![Code Climate](https://codeclimate.com/github/sota0805/cal_exporter.png)](https://codeclimate.com/github/sota0805/cal_exporter)
 [![Coverage Status](https://coveralls.io/repos/sota0805/cal_exporter/badge.png)](https://coveralls.io/r/sota0805/cal_exporter)
 [![Gem Version](https://badge.fury.io/rb/cal_exporter.svg)](http://badge.fury.io/rb/cal_exporter)
 [![Dependency Status](https://gemnasium.com/sota0805/cal_exporter.svg)](https://gemnasium.com/sota0805/cal_exporter)
