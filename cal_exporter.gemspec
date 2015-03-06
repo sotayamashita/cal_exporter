@@ -6,11 +6,11 @@ require 'cal_exporter/version'
 Gem::Specification.new do |spec|
   spec.name          = "cal_exporter"
   spec.version       = CalExporter::VERSION
-  spec.authors       = ["sota0805"]
+  spec.authors       = ["sotayamashita"]
   spec.email         = ["sota.yamashita@gmail.com"]
   spec.summary       = %q{Calander Exporter}
   spec.description   = %q{Export calendar data}
-  spec.homepage      = "https://github.com/sota0805/cal_exporter/"
+  spec.homepage      = "https://github.com/sotayamashita/cal_exporter/"
   spec.license       = "MIT"
   spec.required_ruby_version = '> 1.9.3'
 
