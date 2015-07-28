@@ -2,10 +2,12 @@ CalExporter
 ============
 
 [![Travis][travis-badge]][travis-link]
+[![Gem version][gem-version-badge]][gem-version-link]
+[![Gem download][gem-download-badge]][gem-version-link]
+[![Gemnasium][gemnasium-badge]][gemnasium-link]
 [![codeclimate][codeclimate-badge]][codeclimate-link]
 [![Coverage Status][coverage-badge]][coverage-link]
-[![Gem][gem-version-badge]][gem-version-link]
-[![Gemnasium][gemnasium-badge]][gemnasium-link]
+
 
 Export calendar data for **jekyll**.
 
@@ -70,17 +72,18 @@ Example code below :
 [MIT](LICENSE) © [Sota Yamashita][me]
 
 
-[me]:                https://github.com/sotayamashita/
-[travis-badge]:      https://img.shields.io/travis/sotayamashita/cal_exporter.svg?style=flat-square
-[travis-link]:       https://travis-ci.org/sotayamashita/cal_exporter
-[codeclimate-badge]: https://img.shields.io/codeclimate/github/sotayamashita/cal_exporter.svg?style=flat-square
-[codeclimate-link]:  https://codeclimate.com/github/sotayamashita/cal_exporter
-[coverage-badge]:    https://img.shields.io/coveralls/sotayamashita/cal_exporter.svg?style=flat-square
-[coverage-link]:     https://coveralls.io/github/sotayamashita/cal_exporter
-[gem-version-badge]: https://img.shields.io/gem/v/cal_exporter.svg?style=flat-square
-[gem-version-link]:  https://rubygems.org/gems/cal_exporter
-[gemnasium-badge]:   https://img.shields.io/gemnasium/sotayamashita/cal_exporter.svg?style=flat-square
-[gemnasium-link]:    https://gemnasium.com/sota0805/cal_exporter
+[me]:                 https://github.com/sotayamashita/
+[travis-badge]:       https://img.shields.io/travis/sotayamashita/cal_exporter.svg?style=flat-square
+[travis-link]:        https://travis-ci.org/sotayamashita/cal_exporter
+[codeclimate-badge]:  https://img.shields.io/codeclimate/github/sotayamashita/cal_exporter.svg?style=flat-square
+[codeclimate-link]:   https://codeclimate.com/github/sotayamashita/cal_exporter
+[coverage-badge]:     https://img.shields.io/coveralls/sotayamashita/cal_exporter.svg?style=flat-square
+[coverage-link]:      https://coveralls.io/github/sotayamashita/cal_exporter
+[gem-version-badge]:  https://img.shields.io/gem/v/cal_exporter.svg?style=flat-square
+[gem-version-link]:   https://rubygems.org/gems/cal_exporter
+[gem-download-badge]: https://img.shields.io/gem/dt/cal_exporter.svg?style=flat-square
+[gemnasium-badge]:    https://img.shields.io/gemnasium/sotayamashita/cal_exporter.svg?style=flat-square
+[gemnasium-link]:     https://gemnasium.com/sota0805/cal_exporter
 
 
 
