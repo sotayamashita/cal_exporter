@@ -1,10 +1,11 @@
 CalExporter
 ============
 
-[![Build Status](https://travis-ci.org/sotayamashita/cal_exporter.svg?branch=master)](https://travis-ci.org/sotayamashita/cal_exporter) [![Code Climate](https://codeclimate.com/github/sota0805/cal_exporter.png)](https://codeclimate.com/github/sota0805/cal_exporter)
-[![Coverage Status](https://coveralls.io/repos/sota0805/cal_exporter/badge.png)](https://coveralls.io/r/sota0805/cal_exporter)
-[![Gem Version](https://badge.fury.io/rb/cal_exporter.svg)](http://badge.fury.io/rb/cal_exporter)
-[![Dependency Status](https://gemnasium.com/sota0805/cal_exporter.svg)](https://gemnasium.com/sota0805/cal_exporter)
+[![Travis][travis-badge]][travis-link]
+[![codeclimate][codeclimate-badge]][codeclimate-link]
+[![Coverage Status][coverage-badge]][coverage-link]
+[![Gem][gem-version-badge]][gem-version-link]
+[![Gemnasium][gemnasium-badge]][gemnasium-link]
 
 Export calendar data for **jekyll**.
 
@@ -66,4 +67,20 @@ Example code below :
 
 ## License
 
-[MIT](LICENSE) © [Sota Yamashita](https://github.com/sota0805)
+[MIT](LICENSE) © [Sota Yamashita][me]
+
+
+[me]:                https://github.com/sotayamashita/
+[travis-badge]:      https://img.shields.io/travis/sotayamashita/cal_exporter.svg?style=flat-square
+[travis-link]:       https://travis-ci.org/sotayamashita/cal_exporter
+[codeclimate-badge]: https://img.shields.io/codeclimate/github/sotayamashita/cal_exporter.svg?style=flat-square
+[codeclimate-link]:  https://codeclimate.com/github/sotayamashita/cal_exporter
+[coverage-badge]:    https://img.shields.io/coveralls/sotayamashita/cal_exporter.svg?style=flat-square
+[coverage-link]:     https://coveralls.io/github/sotayamashita/cal_exporter
+[gem-version-badge]: https://img.shields.io/gem/sotayamashita/cal_exporter.svg?style=flat-square
+[gem-version-link]:  https://rubygems.org/gems/cal_exporter
+[gemnasium-badge]:   https://img.shields.io/gemnasium/sotayamashita/cal_exporter.svg?style=flat-square
+[gemnasium-link]:    https://gemnasium.com/sota0805/cal_exporter
+
+
+
