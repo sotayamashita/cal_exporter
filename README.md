@@ -77,7 +77,7 @@ Example code below :
 [codeclimate-link]:  https://codeclimate.com/github/sotayamashita/cal_exporter
 [coverage-badge]:    https://img.shields.io/coveralls/sotayamashita/cal_exporter.svg?style=flat-square
 [coverage-link]:     https://coveralls.io/github/sotayamashita/cal_exporter
-[gem-version-badge]: https://img.shields.io/gem/sotayamashita/cal_exporter.svg?style=flat-square
+[gem-version-badge]: https://img.shields.io/gem/v/cal_exporter.svg?style=flat-square
 [gem-version-link]:  https://rubygems.org/gems/cal_exporter
 [gemnasium-badge]:   https://img.shields.io/gemnasium/sotayamashita/cal_exporter.svg?style=flat-square
 [gemnasium-link]:    https://gemnasium.com/sota0805/cal_exporter
