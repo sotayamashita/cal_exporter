@@ -52,13 +52,6 @@ Example code below :
      ├── 2013-04-26-go72sbm.md
     ...
 
-## TODO
-
-- [ ] Export as CSV
-- [ ] Export as JSON
-- [ ] Decide export one file or each event file
-- [ ] Export as xml
-
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/cal_exporter/fork )
